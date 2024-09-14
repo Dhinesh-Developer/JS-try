@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h">js is very easy</h1>
+    <button id="b1">yes</button>
+    <button id="b2">no</button>   
+    <button onclick="display()">click </button>
+    <button onmouseover="display1()">click2</button>
+    <h1 id="he">created just now</h1>
+    <h1 id="hi">created for praticing</h1>
+
+     <script>
+        document.getElementById("b1").onclick=function()
+        {
+            document.getElementById("h").innerHTML="yes it is easy";
+            document.getElementById("b1").style.backgroundColor='green';
+        }
+        document.getElementById("b2").onclick=function()
+        {
+            document.getElementById("h").innerHTML="no if try then easy";
+            document.getElementById("b2").style.backgroundColor='red';
+        }
+        function display()
+        {
+            alert("This is created by DK")
+        }
+        function display1()
+        {
+            alert("this is created by DK")
+        }
+        document.getElementById("he").onclick=function()
+        {
+            document.getElementById("he").style.color='blue';
+        }
+        document.getElementById("hi").onmouseover=function()
+        {
+            document.getElementById("hi").style.color='blue';
+        }
+        </script>
+</body>
+</html>
